@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Student Dashboard | I B.Tech CSE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">N</div>
+        <div>
+          <h2>NIAT Portal</h2>
+          <span>Student Dashboard</span>
+        </div>
+      </div>
+
+      <div class="student-profile-mini">
+        <div class="avatar">SR</div>
+        <div class="student-info">
+          <h4>Satvik Ram</h4>
+          <p>I B.Tech &bull; CSE-A</p>
+          <span class="roll-badge">Roll: 26NIAT1042</span>
+        </div>
+      </div>
+
+      <nav class="side-nav">
+        <a href="#overview" class="active">Overview & Stats</a>
+        <a href="#attendance">Subject Attendance</a>
+        <a href="#marks">Internal Marks</a>
+        <a href="#timetable">Weekly Timetable</a>
+        <a href="#announcements">Announcements</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Semester I &bull; 2026–27</p>
+        <p class="status-online">Academic Status: Active</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div>
+          <h1>Welcome back, Satvik Ram</h1>
+          <p class="subtitle">B.Tech Computer Science and Engineering &bull; Academic Year 2026–2027</p>
+        </div>
+        <div class="topbar-meta">
+          <span class="pill-date">Semester 1 &bull; Week 12</span>
+        </div>
+      </header>
+
+      <!-- Overview Stats Cards -->
+      <section id="overview" class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Overall Attendance</span>
+          <h3 class="stat-value text-green">88.5%</h3>
+          <p class="stat-note">Above 75% minimum requirement</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Current CGPA / SGPA</span>
+          <h3 class="stat-value text-blue">9.14</h3>
+          <p class="stat-note">Mid-Term Aggregate: 91.4%</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Enrolled Subjects</span>
+          <h3 class="stat-value">6 Courses</h3>
+          <p class="stat-note">4 Theory + 2 Lab Sessions</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Pending Assignments</span>
+          <h3 class="stat-value text-amber">2 Due</h3>
+          <p class="stat-note">HTML/CSS ABL & Python Record</p>
+        </div>
+      </section>
+
+      <!-- Middle Grid: Attendance & Marks -->
+      <div class="two-col-grid">
+        <!-- Subject Attendance -->
+        <section id="attendance" class="panel">
+          <div class="panel-header">
+            <h2>Subject-Wise Attendance</h2>
+            <span class="badge-soft">Updated Today</span>
+          </div>
+
+          <div class="progress-list">
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Python Programming (CS101)</span>
+                <strong>92% (35/38)</strong>
+              </div>
+              <div class="progress-bar"><div class="fill fill-green" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Web Technologies: HTML & CSS (CS102)</span>
+                <strong>95% (38/40)</strong>
+              </div>
+              <div class="progress-bar"><div class="fill fill-green" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Engineering Mathematics – I (MA101)</span>
+                <strong>84% (32/38)</strong>
+              </div>
+              <div class="progress-bar"><div class="fill fill-blue" style="width: 84%;"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Digital Logic & Computer Org (EC101)</span>
+                <strong>82% (28/34)</strong>
+              </div>
+              <div class="progress-bar"><div class="fill fill-blue" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-label">
+                <span>Communication & Soft Skills (HS101)</span>
+                <strong>89% (25/28)</strong>
+              </div>
+              <div class="progress-bar"><div class="fill fill-green" style="width: 89%;"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Internal Assessment Marks -->
+        <section id="marks" class="panel">
+          <div class="panel-header">
+            <h2>Mid-Semester Marks</h2>
+            <span class="badge-soft">Max: 30</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Subject</th>
+                  <th>Mid-1</th>
+                  <th>ABL / Quiz</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CS101</td>
+                  <td>Python Programming</td>
+                  <td>28 / 30</td>
+                  <td>10 / 10</td>
+                  <td><span class="status-pass">Excellent</span></td>
+                </tr>
+                <tr>
+                  <td>CS102</td>
+                  <td>HTML & CSS Web Dev</td>
+                  <td>29 / 30</td>
+                  <td>10 / 10</td>
+                  <td><span class="status-pass">Excellent</span></td>
+                </tr>
+                <tr>
+                  <td>MA101</td>
+                  <td>Engineering Math – I</td>
+                  <td>25 / 30</td>
+                  <td>9 / 10</td>
+                  <td><span class="status-pass">Good</span></td>
+                </tr>
+                <tr>
+                  <td>EC101</td>
+                  <td>Digital Logic Design</td>
+                  <td>26 / 30</td>
+                  <td>8 / 10</td>
+                  <td><span class="status-pass">Good</span></td>
+                </tr>
+                <tr>
+                  <td>CS105L</td>
+                  <td>Python & Web Lab</td>
+                  <td>29 / 30</td>
+                  <td>10 / 10</td>
+                  <td><span class="status-pass">Excellent</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- Weekly Timetable Section -->
+      <section id="timetable" class="panel">
+        <div class="panel-header">
+          <h2>Weekly Class Timetable</h2>
+          <span class="badge-soft">Room: Block B – 304</span>
+        </div>
+        <div class="table-wrap">
+          <table class="timetable">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>09:00 – 10:00</th>
+                <th>10:00 – 11:00</th>
+                <th>11:15 – 12:15</th>
+                <th>01:15 – 02:15</th>
+                <th>02:15 – 04:00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Monday</th>
+                <td>Python (CS101)</td>
+                <td>Engg. Math (MA101)</td>
+                <td>HTML & CSS (CS102)</td>
+                <td>Digital Logic (EC101)</td>
+                <td class="lab-slot">Python Programming Lab</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>HTML & CSS (CS102)</td>
+                <td>Digital Logic (EC101)</td>
+                <td>Engg. Math (MA101)</td>
+                <td>Soft Skills (HS101)</td>
+                <td>Library / Self Study</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>Engg. Math (MA101)</td>
+                <td>Python (CS101)</td>
+                <td>Soft Skills (HS101)</td>
+                <td>HTML & CSS (CS102)</td>
+                <td class="lab-slot">Web Technologies Lab</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>Digital Logic (EC101)</td>
+                <td>HTML & CSS (CS102)</td>
+                <td>Python (CS101)</td>
+                <td>Engg. Math (MA101)</td>
+                <td>Coding Club / Mentoring</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>Python (CS101)</td>
+                <td>Soft Skills (HS101)</td>
+                <td>Digital Logic (EC101)</td>
+                <td>Tutorial Session</td>
+                <td>Sports / Hackathon Prep</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Notifications & Announcements -->
+      <section id="announcements" class="panel">
+        <div class="panel-header">
+          <h2>Notifications & Campus Announcements</h2>
+          <span class="badge-soft">3 Unread</span>
+        </div>
+        <div class="notice-list">
+          <div class="notice-item urgent">
+            <span class="notice-tag">Submission</span>
+            <div>
+              <h4>HTML & CSS Activity-Based Learning (ABL) GitHub Upload</h4>
+              <p>Submit your repository link containing 1 project from each group along with the consolidated report to your Lab Mentor.</p>
+            </div>
+          </div>
+          <div class="notice-item info">
+            <span class="notice-tag">Event</span>
+            <div>
+              <h4>AI Creator's Arena & Campus Hackathon Registrations Open</h4>
+              <p>First-year B.Tech CSE teams can register on the student portal before Friday 5:00 PM.</p>
+            </div>
+          </div>
+          <div class="notice-item general">
+            <span class="notice-tag">Exam Cell</span>
+            <div>
+              <h4>Semester-I End Examination Hall Ticket Verification</h4>
+              <p>Verify your enrolled subjects and attendance percentage on the dashboard before the deadline.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const navLinks = document.querySelectorAll('.side-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
